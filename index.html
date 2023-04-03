@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/hybrid.png" type="image/x-icon" />
+    <title>AI Universe Hub</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body>
+    <!-- header part start -->
+    <header>
+      <div class="cotainer text-center py-5">
+        <img src="images/hybrid.png" style="height: 50px" alt="AI logo image" />
+        <h3 class="fw-bold d-inline-block">AI Universe Hub</h3>
+        <button class="btn bg-info bg-opacity-75 d-block fw-bold mx-auto my-4">
+          Sort By Date
+        </button>
+      </div>
+    </header>
+    <!-- header part end -->
+    <!-- main part start -->
+    <main>
+      <section class="py-4">
+        <div class="container">
+          <div
+            id="data-container"
+            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
+          ></div>
+        </div>
+        <i class=""></i>
+        <!-- Show all data -->
+        <div id="show-allData" class="text-center py-3 d-none">
+          <button id="btn-showAll" class="btn btn-primary fw-bold">
+            Show All
+          </button>
+        </div>
+      </section>
+      <!-- loader -->
+      <section id="loader" class="d-none">
+        <div
+          style="height: 400px"
+          class="d-flex justify-content-center align-items-center"
+        >
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </section>
+      <!-- show Product details by modal start -->
+      <section>
+        <div
+          class="modal fade modal-xl"
+          id="showProductDetails"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="showProductDetailsLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3">
+              <button
+                type="button"
+                class="btn-close bg-danger rounded-circle p-3 ms-auto mb-3"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+<div class="row row-cols-1 row-cols-md-2 g-2">
+<!-- one portion -->
+        <div class="col">
+          <div class="card" id="data-details">
+          </div>
+        </div>
+       <!-- another portion -->
+             <div class="col">
+                <div class="card p-2">
+                <img
+                src=""
+                alt="food-image "
+                class="img-fluid rounded-2 mx-auto w-100"
+                id="productDetailsImage"
+                style="height: 250px"
+              />
+           
+                <p id="accuracy" class="text-white d-none accuracy text-center py-2 fw-bold bg-danger  rounded-2 w-50 accuracy"></p>
+              <div class="modal-body" id="showDetailsContainer"></div>
+             </div>
+              </div>
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- show Product details by modal end-->
+    </main>
+    <!-- main part end -->
+<!-- footer start -->
+<footer>
+<div class=" bg-black bg-opacity-75 py-5">
+    <p class="text-center text-secondary fw-bold">AI Universe Hub</p>
+</div>
+</footer>
+<!-- footer end -->
+    <script src="js/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
